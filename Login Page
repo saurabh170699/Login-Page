@@ -1,1 +1,129 @@
+//login.html
+
+<!DOCTYPE html>
+<html lan = "en" and dir = "Itr">
+    <head>
+        <meta charsat = "utf-8">
+        <title> Interactive Login Form</title>
+        <link rel ="stylesheet" href="style2.css">
+        <script src ="login2.js"></script>
+
+
+
+    </head>
+    <body>
+        <form class = "box" action = "logic.html" method ="POST">
+            <h1>
+                login
+            </h1>
+            <input type ="text" name =" "placeholder ="Enter Usename" id ="username">
+            <input type ="password" name =" " placeholder ="Enter Password" id="password">
+            <input type ="submit" name =" " value ="Login" onclick="validate()">
+
+        </form>
+    </body>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+//login2.js
+
+function validate()
+{
+var username=document.getElementById("username").value;   
+var password=document.getElementById("password").value;
+if(username=="admin"&& password=="user")
+{
+        alert("login succesfully");
+        return false;
+
+}
+else 
+{
+        alert("login failed");
+        
+}
+}
+
+
+
+
+
+
+
+//style2.css
+
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: url(abc.jpg);
+    background-size: cover;
+}
+.box{
+    width:735px;
+    padding:300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background:rgba(0,0,0,0.4);
+    text-align:center;
+
+}
+.box h1
+{
+    color:white;
+    text-transform: uppercase;
+    font-wight: 300;
+
+}
+.box Input[type="text"],.box Input[Type = "password"]
+{
+    border : 0;
+    background: none;
+    Display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:3px solid #0367fd;
+    padding:14px 10px;
+    width:220px;
+    outline: none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25px;
+}
+
+.box input[type="text"]:focus,.box input[type = "password"]:focus{
+
+    width:270px;
+    border-color:blueviolet
+
+}
+.box input[type="submit"]{
+
+    border : 0;
+    background: none;
+    Display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:3px solid #ffc400ec;
+    padding: 14px 35px;
+    outline: none;
+    color: white;
+    border-radius : 24px;
+    transition : 0.25px;
+    cursor:pointer;
+}
+.box input[type="submit"]:hover{
+    background-color: #ffc400ec ;
+}
 
